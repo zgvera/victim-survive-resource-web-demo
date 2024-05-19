@@ -1,5 +1,6 @@
 # ignore environment
 venv/
+.venv/
 
 # ignore database
 dat.db
