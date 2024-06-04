@@ -19,3 +19,9 @@ This project is a demo of victim survive website
 ```
 source ./venv/bin/activate
 ```
+
+2. run the app
+
+```
+streamlit run home_page.py
+```

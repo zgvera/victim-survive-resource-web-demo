@@ -1,6 +1,7 @@
 # ignore environment
 venv/
 .venv/
+.ipynb_checkpoints/
 
 # ignore database
 dat.db
