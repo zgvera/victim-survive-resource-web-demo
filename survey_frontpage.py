@@ -20,9 +20,9 @@ with pages:
     
     elif pages.current == 1:  
         st.write("How long ago did the event happen? (Best approximation if not sure.)")
-        event_ago = st.number_input("Number of Days", min_value=0, value=None)
+        event_ago = st.number_input("Number of Days", min_value=0, value=None, placeholder="Type a number...")
 
-        if not event_ago:
+        if event_ago==None:
             st.stop()
 
         else:
