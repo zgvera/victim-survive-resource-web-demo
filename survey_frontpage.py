@@ -14,9 +14,7 @@ with pages:
             horizontal=True,
         )
 
-        if age!="younger than 16" :
-            st.experimental_rerun()
-        else:
+        if age == "younger than 16" :
             st.warning("Sorry to hear what you have been through. Unfortunately, we are unable to provide service to you at this point. Please seek medical help immediately.")
             st.stop()
     
@@ -24,24 +22,23 @@ with pages:
         st.write("How long ago did the event happen? (Best approximation if not sure.)")
         event_ago = st.number_input("Number of Days", min_value=0, value=None)
 
-        # if event_ago:
-        #     #st.experimental_rerun()
-        # else:
-        #     st.stop()
-        
-        
-        if event_ago <= 3:
-            st.write("The event happend within three days.")
+        if not event_ago:
+            st.stop()
+
+        else:
+            if event_ago <= 3:
+                st.write("The event happend within three days.")
+    
+            elif (event_ago > 3) & (event_ago <= 7 ):
+                st.write("The event happend more than three days and within seven days.")
+            elif event_ago > 7:
+                st.write("The event happend more than seven days.")
 
             uploaded_files = st.file_uploader("Choose a file", accept_multiple_files=True)
             for uploaded_file in uploaded_files:
                 bytes_data = uploaded_file.read()
                 st.write("filename:", uploaded_file.name)
                 st.write(bytes_data)
-        elif (event_ago > 3) & (event_ago <= 7 ):
-            st.write("The event happend more than three days and within seven days.")
-        elif event_ago > 7:
-            st.write("The event happend more than seven days.")
 
     elif pages.current == 2:
         st.write("How satisfied are you with this survey?")
