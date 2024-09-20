@@ -29,4 +29,4 @@ streamlit run home_page.py
 
 *[Survey demo](victim-survive-ernogecsqzxiyiydd5jysf.streamlit.app)*.
 
-*[Victim survival resource website demo](victim-survive-ernogecsqzxiyiydd5jysf.streamlit.app)*.
+*[Victim survival resource website demo](victim-survive-d2b4ucwfcqjrcqwgeglepr.streamlit.app)*.
