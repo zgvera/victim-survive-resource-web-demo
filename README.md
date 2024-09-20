@@ -25,3 +25,8 @@ source ./venv/bin/activate
 ```
 streamlit run home_page.py
 ```
+# Demo
+
+*[Survey demo](victim-survive-ernogecsqzxiyiydd5jysf.streamlit.app)*.
+
+*[Victim survival resource website demo](victim-survive-ernogecsqzxiyiydd5jysf.streamlit.app)*.
